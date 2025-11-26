@@ -170,7 +170,7 @@ function resolvePath(routePath) {
               offset: [0, -10],
               theme: tooltipEffect
             }"
-            class="w-full! text-inherit!"
+            class="w-full! text-inherit! !text-[16px]"
           >
             {{ onlyOneChild.meta.title }}
           </ReText>

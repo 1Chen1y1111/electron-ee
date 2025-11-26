@@ -31,6 +31,26 @@ export default [
     }
   },
   {
+    path: "/evidenceManagementCenter",
+    redirect: "/evidenceManagementCenter/index",
+    // component: Layout_No_Sidebar,
+    meta: {
+      title: "按键管理中心",
+      showLink: false,
+      rank: 1001
+    },
+    children: [
+      {
+        path: "/evidenceManagementCenter/index",
+        name: "EvidenceManagementCenter",
+        component: () => import("@/views/evidenceManagementCenter/index.vue"),
+        meta: {
+          title: "按键管理中心"
+        }
+      }
+    ]
+  },
+  {
     path: "/redirect",
     component: Layout,
     meta: {

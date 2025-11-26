@@ -107,6 +107,10 @@ declare global {
     TooltipEffect?: Effect;
     ResponsiveStorageNameSpace?: string;
     MenuSearchHistory?: number;
+    CustomConfig: {
+      Logo: string; // logo 地址
+      LogoBlackText: string; // logo 黑色文字 完整地址
+    };
   }
 
   /**

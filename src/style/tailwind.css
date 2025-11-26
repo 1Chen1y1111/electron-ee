@@ -6,9 +6,13 @@
 
 @theme {
   --color-bg_color: var(--el-bg-color);
-  --color-primary: var(--el-color-primary);
   --color-text_color_primary: var(--el-text-color-primary);
   --color-text_color_regular: var(--el-text-color-regular);
+
+  --color-primary: var(--soda-primary-color);
+  --color-default: var(--soda-default-color);
+  --color-danger: var(--soda-danger-color);
+  --color-gray: var(--soda-gray-color);
 }
 
 /*

@@ -1,6 +1,6 @@
 {
-  "Version": "6.2.0",
-  "Title": "PureAdmin",
+  "Version": "0.0.1",
+  "Title": "网踪-电子取证",
   "FixedHeader": true,
   "HiddenSideBar": false,
   "MultiTagsCache": false,
@@ -12,15 +12,19 @@
   "Grey": false,
   "Weak": false,
   "HideTabs": false,
-  "HideFooter": false,
+  "HideFooter": true,
   "Stretch": false,
   "SidebarStatus": true,
-  "EpThemeColor": "#409EFF",
+  "EpThemeColor": "#006CFF",
   "ShowLogo": true,
   "ShowModel": "smart",
   "MenuArrowIconNoTransition": false,
   "CachingAsyncRoutes": false,
   "TooltipEffect": "light",
-  "ResponsiveStorageNameSpace": "responsive-",
-  "MenuSearchHistory": 6
+  "ResponsiveStorageNameSpace": "responsive-e-e-",
+  "MenuSearchHistory": 6,
+  "CustomConfig": {
+    "Logo": "/img/dzqz/logo.png",
+    "LogoBlackText": "/img/dzqz/logo_black_text.png"
+  }
 }
