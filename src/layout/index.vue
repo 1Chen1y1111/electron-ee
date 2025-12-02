@@ -24,7 +24,7 @@ import {
 } from "@pureadmin/utils";
 
 import LayTag from "./components/lay-tag/index.vue";
-import LayNavbar from "./components/lay-navbar/index.vue";
+import LayNavbar from "./components/lay-custom/lay-navbar/index.vue";
 import LayContent from "./components/lay-content/index.vue";
 import LaySetting from "./components/lay-setting/index.vue";
 import NavVertical from "./components/lay-sidebar/NavVertical.vue";
