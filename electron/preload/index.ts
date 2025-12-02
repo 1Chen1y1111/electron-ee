@@ -25,6 +25,13 @@ contextBridge.exposeInMainWorld("ipcRenderer", {
   // ...
 });
 
+// Custom APIs for renderer
+const api = {
+  getFolderPath: () => ipcRenderer.invoke("select-folder")
+};
+
+contextBridge.exposeInMainWorld("api", api);
+
 // --------- Preload scripts loading ---------
 function domReady(
   condition: DocumentReadyState[] = ["complete", "interactive"]

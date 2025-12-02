@@ -8,7 +8,8 @@ import {
   Menu,
   shell,
   ipcMain,
-  BrowserWindow
+  BrowserWindow,
+  dialog
 } from "electron";
 
 // The built directory structure
@@ -204,4 +205,18 @@ ipcMain.handle("open-win", (_, arg) => {
   } else {
     childWindow.loadFile(indexHtml, { hash: arg });
   }
+});
+
+// 选择文件夹路径
+ipcMain.handle("select-folder", async () => {
+  const result = await dialog.showOpenDialog({
+    title: "选择文件夹",
+    properties: ["openDirectory"]
+  });
+
+  if (result.canceled) {
+    return null;
+  }
+
+  return result.filePaths[0];
 });

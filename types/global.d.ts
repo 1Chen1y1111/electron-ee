@@ -27,6 +27,10 @@ declare global {
   interface Window {
     // Global vue app instance
     __APP__: App<Element>;
+    // Electron IPC Renderer
+    api: {
+      getFolderPath: () => string;
+    };
     webkitCancelAnimationFrame: (handle: number) => void;
     mozCancelAnimationFrame: (handle: number) => void;
     oCancelAnimationFrame: (handle: number) => void;
